@@ -1,8 +1,5 @@
-// Select color input
-// Select size input
 
-// When size is submitted by the user, call makeGrid()
-
+//generating grid based on user input
 
 $("#button").click(function makeGrid(){
 
@@ -19,11 +16,13 @@ $("#button").click(function makeGrid(){
             htmlTable += "<td class='cell'></td>";
        
         }
-        htmlTable += "</tr>";     
+            htmlTable += "</tr>";     
     }   
 
     $("#pixelCanvas").html(htmlTable);
 
+
+//picking a color and showing color on grid
 
 	$(".cell").click(function() {
 
