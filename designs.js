@@ -1,17 +1,20 @@
 
+const rowInput = $("#inputHeight");
+const columnInput = $("#inputWidth");
+
 //generating grid based on user input
 
 $("#button").click(function makeGrid(){
 
     let htmlTable = "";
-	let inputWidth = $("#inputWidth").val();
-    let inputHeight = $("#inputHeight").val();
-
-    for(let i = 0; i < inputHeight; i++){
+    let rowCount = rowInput.val();
+    let columnCount = columnInput.val();
+	
+    for(let i = 0; i < rowCount; i++){
             
             htmlTable += "<tr>";
    
-        for(let j = 0; j < inputWidth; j++){
+        for(let j = 0; j < columnCount; j++){
             
             htmlTable += "<td class='cell'></td>";
        
@@ -22,7 +25,9 @@ $("#button").click(function makeGrid(){
     $("#pixelCanvas").html(htmlTable);
 
 
-//picking a color and showing color on grid
+
+//fetching color from color picker and coloring 
+//cell background on click
 
 	$(".cell").click(function() {
 
