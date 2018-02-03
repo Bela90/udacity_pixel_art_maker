@@ -1,8 +1,8 @@
-#***Pixel art maker*** 
+***#Pixel art maker*** 
 
 Pixel art maker is a single-page web app that allows users to draw pixel art on a customizable canvas. 
 
-##**Getting started:** 
+**##Getting started:** 
 
 User enters input width and height of the grid and on submit generate wanted grid. 
 
